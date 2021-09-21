@@ -18,7 +18,7 @@ const endStyle = {
   borderRadius: "2px",
   width: "290px",
   height: "110px",
-  backgroundColor: "lightblue",
+  backgroundColor: "lightgrey",
 };
 
 const Game = ({ name1, name2, setLogged, id, setId }) => {
@@ -137,16 +137,12 @@ const Game = ({ name1, name2, setLogged, id, setId }) => {
           <p className="end-text">Draw!</p>
           <Button
             className="new-game"
-            variant="outline-primary"
+            variant="outline-success"
             onClick={newGame}
           >
             New Game
           </Button>
-          <Button
-            className="new-game"
-            variant="outline-primary"
-            onClick={reset}
-          >
+          <Button className="new-game" variant="outline-danger" onClick={reset}>
             Reset
           </Button>
           <History history={history} id={id} setHistory={setHistory} />
@@ -157,14 +153,14 @@ const Game = ({ name1, name2, setLogged, id, setId }) => {
             <p>{name2} is victorious!</p>
             <Button
               className="new-game"
-              variant="outline-primary"
+              variant="outline-danger"
               onClick={newGame}
             >
               New Game
             </Button>
             <Button
               className="new-game"
-              variant="outline-primary"
+              variant="outline-success"
               onClick={reset}
             >
               Reset
@@ -176,14 +172,14 @@ const Game = ({ name1, name2, setLogged, id, setId }) => {
             <p>{name1} is victorious!</p>
             <Button
               className="new-game"
-              variant="outline-primary"
+              variant="outline-success"
               onClick={newGame}
             >
               New Game
             </Button>
             <Button
               className="new-game"
-              variant="outline-primary"
+              variant="outline-danger"
               onClick={reset}
             >
               Reset

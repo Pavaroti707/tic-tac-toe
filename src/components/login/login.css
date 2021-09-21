@@ -1,21 +1,18 @@
 .form-group {
-
-  margin:auto;
+  margin: auto;
   margin-top: 18%;
   margin-left: 39%;
- 
+
   height: 190px;
   width: 305px;
   border: 2px solid black;
   border-radius: 2px;
-  background-color: lightblue
+  background-color: lightgrey;
 }
 
 button {
   margin-top: 20px;
   margin-left: 100px;
-  
-  
 }
 
 .form-control {

@@ -3,9 +3,9 @@ import HistoryItem from "./HistoryItem";
 const style = {
   listStyleType: "none",
   marginTop: "15px",
-  border: "1px solid black",
+  border: "1.5px solid black",
   borderRadius: "12.5px",
-  backgroundColor: "lightblue",
+  backgroundColor: "lightgrey",
 };
 
 const History = ({ history, id, setHistory }) => {
